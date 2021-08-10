@@ -9,6 +9,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile the source code' 
+                echo 'Compile my JENKINS file'
             }
         }
         stage('Security Check') {
@@ -29,6 +30,7 @@ pipeline {
         stage('Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
+                echo 'This is the last line'
             }
         }
     }
